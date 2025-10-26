@@ -6,16 +6,14 @@ import TechLists from "./components/TechLists";
 
 export default function Home() {
     return (
-        <>
-            <div>
-                <main className="mt-5 p-4">
-                    <Profile />
-                    <About />
-                    <ProjectsList />
-                    <TechLists />
-                    <Experience />
-                </main>
-            </div>
-        </>
+        <div>
+            <main className="mt-5 p-4">
+                <Profile />
+                <About />
+                <ProjectsList />
+                <TechLists />
+                <Experience />
+            </main>
+        </div>
     );
 }

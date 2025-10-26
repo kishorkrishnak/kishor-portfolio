@@ -1,7 +1,7 @@
-import "./globals.css";
-import Navbar from "./components/Navbar";
 import { seo } from "@/data/data";
 import Footer from "./components/Footer";
+import Navbar from "./components/Navbar";
+import "./globals.css";
 
 export const metadata = {
     title: `${seo.title}`,

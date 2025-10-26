@@ -1,7 +1,7 @@
 export const about = {
     name: "Kishor Krishna K",
     role: "Software Engineer",
-    about: "Hi, I’m Kishor and I live in Kerala, India. I work as a Software Engineer focused on Geospatial technologies. When I’m not coding, I enjoy reading books, exploring new tech, and watching my favorite TV shows.",
+    about: "Hi, I’m Kishor from Kerala, India. I’m a Software Engineer working in Geospatial technologies, building reliable and scalable systems that connect spatial data with real-world applications. My interests include AI, agentic systems, data pipelines, and distributed computing, especially where they overlap with geospatial technology.",
     email: "kishorkrishna500@gmail.com",
 };
 
@@ -13,13 +13,12 @@ export const seo = {
 
 export const skills = [
     { name: "HTML", alt: "html logo", icon: "/html5.svg" },
-    { name: "CSS3", alt: "css3 logo", icon: "/css3.svg" },
+    { name: "CSS", alt: "css3 logo", icon: "/css3.svg" },
     { name: "Javascript", alt: "javascript logo", icon: "/javascript.svg" },
     { name: "Typescript", alt: "typescript logo", icon: "/ts.svg" },
     { name: "React", alt: "react logo", icon: "/react.svg" },
     { name: "Next.js", alt: "nextjs logo", icon: "/next-js.svg" },
     { name: "Tailwind CSS", alt: "tailwind logo", icon: "/tailwind.svg" },
-    { name: "Material UI", alt: "mui logo", icon: "/mui.png" },
     { name: "Node.js", alt: "nodejs logo", icon: "/nodejs.svg" },
     { name: "Express.js", alt: "express logo", icon: "/express.png" },
     { name: "MongoDB", alt: "mongodb logo", icon: "/mongodb.svg" },
@@ -29,6 +28,7 @@ export const skills = [
     { name: "QGIS", alt: "qgis logo", icon: "/qgis.svg" },
     { name: "MySQL", alt: "mysql logo", icon: "/mysql.svg" },
     { name: "PostgreSQL", alt: "postgresql logo", icon: "/postgresql.svg" },
+    { name: "GCP", alt: "gcp  logo", icon: "/gcp.svg" },
     { name: "AWS", alt: "aws logo", icon: "/aws.svg" },
 ];
 
@@ -37,7 +37,6 @@ export const socials = {
     github: "https://github.com/kishorkrishnak",
     twitter: "https://twitter.com/kishorkrishnaa",
     instagram: "https://www.instagram.com/kxshor",
-    facebook: "https://www.facebook.com/imsachinbhujel",
     linkedin: "https://www.linkedin.com/in/kishorkrishnak",
 };
 
@@ -152,19 +151,4 @@ Reduced server latency by 60% via client and server-side caching, improving webs
 
 
 export const blogs = [
-    {
-        title: "Understanding React Hooks",
-        date: "12/03/2025",
-        link: "#",
-    },
-    {
-        title: "CSS Grid vs Flexbox: When to Use Which",
-        date: "25/12/2024",
-        link: "#",
-    },
-    {
-        title: "Next.js SEO Best Practices",
-        date: "10/07/2024",
-        link: "#",
-    },
 ];

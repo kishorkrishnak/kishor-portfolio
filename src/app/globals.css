@@ -7,7 +7,6 @@
 /*@custom-variant dark (@media (prefers-color-scheme: dark), :root:has(input.theme-controller[value=dark]:checked) &);*/
 @custom-variant dark (&:where([data-theme=dark], [data-theme=dark] *));
 
-
 /*:root {
   --background: #ffffff;
   --foreground: #171717;
@@ -31,8 +30,12 @@
 @theme {
   --animate-marquee: marquee 10s linear infinite;
   @keyframes marquee {
-    0%   { transform: translateX(0%); }
-    100% { transform: translateX(-50%); }
+    0% {
+      transform: translateX(0%);
+    }
+    100% {
+      transform: translateX(-50%);
+    }
   }
 }
 
@@ -41,9 +44,10 @@ body::-webkit-scrollbar {
   display: none;
 }
 
-html, body {
-  scrollbar-width: none; 
+html,
+body {
+  scrollbar-width: none;
   -ms-overflow-style: none;
-   scroll-behavior: smooth;
-   font-family: "Rethink Sans";
+  scroll-behavior: smooth;
+  font-family: "Rethink Sans";
 }
