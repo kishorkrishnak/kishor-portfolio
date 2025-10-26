@@ -41,10 +41,6 @@ export const seo = {
     keywords: "portfolio, web developer, Next.js, developer portfolio, minimal portfolio",
 }
 
-export const forms = {
-    formspreeUrl: "https://formspree.io/f/<url>",
-}
-
 export const skills = [
   { name: "Html", icon: "/html.svg" },
   { name: "React", icon: "/react.svg" }

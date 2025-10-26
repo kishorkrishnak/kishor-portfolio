@@ -7,12 +7,8 @@ export const about = {
 
 export const seo = {
     title: `${about.name} | ${about.role}`,
-    description: "Minimal, clean Next.js portfolio template for developers seeking a simple, professional online presence without extra complexity.",
+    description: "Kishor Krishna K",
     keywords: "portfolio, web developer, Next.js, developer portfolio, minimal portfolio",
-}
-
-export const forms = {
-    formspreeUrl: "https://formspree.io/f/<url>",
 }
 
 export const skills = [
@@ -21,7 +17,6 @@ export const skills = [
     { name: "Javascript", alt: "javascript logo", icon: "/javascript.svg" },
     { name: "Typescript", alt: "typescript logo", icon: "/ts.svg" },
     { name: "React", alt: "react logo", icon: "/react.svg" },
-    { name: "Redux-Toolkit", alt: "redux logo", icon: "/redux.svg" },
     { name: "Next.js", alt: "nextjs logo", icon: "/next-js.svg" },
     { name: "Tailwind CSS", alt: "tailwind logo", icon: "/tailwind.svg" },
     { name: "Material UI", alt: "mui logo", icon: "/mui.png" },
@@ -53,18 +48,7 @@ export const projects = {
             description:
                 "WebGIS platform to discover and share interesting places and landmarks in your region.",
             tags: [
-                "HTML5",
-                "CSS3",
-                "Bootstrap5",
-                "Javascript",
-                "React",
-                "React-Bootstrap",
-                "Redux-Toolkit",
-                "Axios",
-                "Node JS",
-                "Express JS",
-                "MongoDB",
-                "Netlify",
+                "React", "Leaflet", "Material UI", "Express.js", "MongoDB"
             ],
             link: "https://geolens-two.vercel.app/",
         },
@@ -81,18 +65,14 @@ export const projects = {
             description:
                 "Spotify web client integrating Spotify API with visualized listening habits through charts.",
             tags: [
-                "HTML5",
-                "CSS3",
-                "Bootstrap5",
-                "Javascript",
-                "React",
-                "React-Bootstrap",
-                "Node JS",
-                "Express JS",
-                "MongoDB",
+                "React", "Tailwind CSS", "Express.js", "Chart.js", "Spotify API"
             ],
             link: "https://sonify-one.vercel.app/",
         },
+
+    ],
+
+    otherProjects: [
         {
             title: "Animebliss",
             description:
@@ -100,9 +80,6 @@ export const projects = {
             tags: ["HTML5", "CSS3", "Bootstrap5", "Javascript"],
             link: "https://animehub-inky.vercel.app/",
         },
-    ],
-
-    otherProjects: [
         {
             title: "Storylink",
             description:
@@ -152,25 +129,25 @@ export const projects = {
 };
 
 export const experience = [
-  {
-    title: "Software Engineer at TECHG-X",
-    description: `Developed a React-based GIS dashboard for visualizing climate risk data across multiple timeframes.
+    {
+        title: "Software Engineer at TECHG-X",
+        description: `Developed a React-based GIS dashboard for visualizing climate risk data across multiple timeframes.
 Built an Agentic AI platform for geospatial data engineering and visualization using LangGraph.
 Implemented a background job system using Celery and Redis for asynchronous geospatial data processing workflows.
 Developed real-time progress tracking for background tasks using Redis Pub/Sub and SSE.
 Created interactive map components with Leaflet, including custom layer controls and Geoserver integration.`,
-    date: "June 2025 – Present",
-    location: "Tampa, Florida, USA (Remote)"
-  },
-  {
-    title: "Full Stack Developer at CherriLearn",
-    description: `Developed a gamified quiz platform with leaderboards, rewards, mini games, and performance analytics through interactive charts.
+        date: "June 2025 – Present",
+        location: "Tampa, Florida, USA (Remote)"
+    },
+    {
+        title: "Full Stack Developer at CherriLearn",
+        description: `Developed a gamified quiz platform with leaderboards, rewards, mini games, and performance analytics through interactive charts.
 Implemented push notifications, role-based access control for quizmasters and players, and automated quiz scheduling using cron jobs.
 Built an AI-powered blog generator POC using Next.js and LangChain.
 Reduced server latency by 60% via client and server-side caching, improving website loading times.`,
-    date: "Jan 2024 – May 2025",
-    location: "Mangalore, Karnataka, India"
-  }
+        date: "Jan 2024 – May 2025",
+        location: "Mangalore, Karnataka, India"
+    }
 ];
 
 
