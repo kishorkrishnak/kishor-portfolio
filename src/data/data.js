@@ -1,7 +1,7 @@
 export const about = {
     name: "Kishor Krishna K",
     role: "Software Engineer",
-    about: "Hi, I’m Kishor from Kerala, India. I’m a Software Engineer working in Geospatial technologies, building reliable and scalable systems that connect spatial data with real-world applications. My interests include AI, agentic systems, data pipelines, and distributed computing, especially where they overlap with geospatial technology.",
+    about: "Hi, I’m Kishor from Kerala, India. I’m a Software Engineer working in Geospatial technologies, building reliable and scalable systems that connect spatial data with real-world applications. My interests include applied AI, cloud-native systems, and distributed computing, particularly at their intersection with geospatial technology.",
     email: "kishorkrishna500@gmail.com",
 };
 
