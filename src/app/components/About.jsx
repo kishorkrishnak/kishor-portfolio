@@ -7,12 +7,9 @@ export default function About() {
                 About
             </h2>
             <div className="flex gap-2 flex-col">
+                <p className="text-base text-base-content/80">{about.about}</p>
                 <p className="text-base text-base-content/80">
-                    {about.about}
-                </p>
-                <p className="text-base text-base-content/80">
-                    If you’ve got any questions or just feel like chatting,
-                    send me an{" "}
+                    If you’ve got any questions or just feel like chatting, send me an{" "}
                     <a
                         href={`mailto:${about.email}`}
                         className="font-bold hover:underline cursor-pointer"
@@ -29,7 +26,6 @@ export default function About() {
                 >
                     Download Resume
                 </a>
-
             </div>
         </div>
     );

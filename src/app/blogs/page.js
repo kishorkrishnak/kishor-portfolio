@@ -1,6 +1,5 @@
-import React from "react";
-import { blogs , seo } from "../../data/data";
 import Link from "next/link";
+import { blogs, seo } from "../../data/data";
 
 export const metadata = {
     title: `Blogs | ${seo.title}`,

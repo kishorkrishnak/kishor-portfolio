@@ -1,5 +1,4 @@
-import React from "react";
-import { projects , seo } from "@/data/data";
+import { projects, seo } from "@/data/data";
 
 export const metadata = {
     title: `Projects | ${seo.title}`,
