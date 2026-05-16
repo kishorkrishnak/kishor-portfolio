@@ -20,7 +20,7 @@ export default function ProjectsList() {
                         key={index}
                         target="_blank"
                         rel="noopener noreferrer"
-                        className="group cursor-pointer p-4 border-2 border-base-content/20 hover:border-base-content/80 rounded-2xl hover:scale-102 transition-transform duration-200"
+                        className="group cursor-pointer rounded-md border border-base-content/15 p-4 transition-colors hover:border-base-content/45 hover:bg-base-content/[0.03]"
                     >
                         <div className="flex flex-col gap-2 justify-between">
                             <div className="flex items-center justify-between">
@@ -48,7 +48,7 @@ export default function ProjectsList() {
                                 {item.tags.map((tag, idx) => (
                                     <span
                                         key={idx}
-                                        className="text-xs border-gray-400 font-medium text-base-content/70 border rounded-md px-4"
+                                        className="rounded border border-base-content/15 px-2 py-0.5 text-xs font-medium text-base-content/65"
                                     >
                                         {tag}
                                     </span>

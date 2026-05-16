@@ -1,7 +1,8 @@
 export const about = {
     name: "Kishor Krishna K",
     role: "Software Engineer",
-    about: "Hi, I’m Kishor from Kerala, India. I’m a Software Engineer working in Geospatial technologies, building reliable and scalable systems that connect spatial data with real-world applications. My interests include applied AI, cloud-native systems, and distributed computing, particularly at their intersection with geospatial technology.",
+    tagline: "Full Stack + AI + GIS",
+    about: "I build software at the intersection of geospatial data, AI, and product engineering. I've shipped across startups, client projects, and early-stage products, taking ideas from concept to usable software. I'm comfortable working across the stack, from backend systems and cloud infrastructure to maps, workflows, and user-facing product experiences. Outside of work, I like experimenting with new tools and contributing to open-source or developer communities.",
     email: "kishorkrishna500@gmail.com",
 };
 
@@ -12,24 +13,25 @@ export const seo = {
 }
 
 export const skills = [
-    { name: "HTML", alt: "html logo", icon: "/html5.svg" },
-    { name: "CSS", alt: "css3 logo", icon: "/css3.svg" },
-    { name: "Javascript", alt: "javascript logo", icon: "/javascript.svg" },
-    { name: "Typescript", alt: "typescript logo", icon: "/ts.svg" },
-    { name: "React", alt: "react logo", icon: "/react.svg" },
-    { name: "Next.js", alt: "nextjs logo", icon: "/next-js.svg" },
-    { name: "Tailwind CSS", alt: "tailwind logo", icon: "/tailwind.svg" },
-    { name: "Node.js", alt: "nodejs logo", icon: "/nodejs.svg" },
-    { name: "Express.js", alt: "express logo", icon: "/express.png" },
-    { name: "MongoDB", alt: "mongodb logo", icon: "/mongodb.svg" },
-    { name: "Django", alt: "django logo", icon: "/django.svg" },
-    { name: "Leaflet", alt: "leaflet logo", icon: "/leaflet.svg" },
-    { name: "Geoserver", alt: "geoserver logo", icon: "/geoserver.png" },
-    { name: "QGIS", alt: "qgis logo", icon: "/qgis.svg" },
-    { name: "MySQL", alt: "mysql logo", icon: "/mysql.svg" },
-    { name: "PostgreSQL", alt: "postgresql logo", icon: "/postgresql.svg" },
-    { name: "GCP", alt: "gcp  logo", icon: "/gcp.svg" },
-    { name: "AWS", alt: "aws logo", icon: "/aws.svg" },
+    "React",
+    "Next.js",
+    "TypeScript",
+    "Node.js",
+    "Express.js",
+    "Python",
+    "Django",
+    "PostgreSQL",
+    "MongoDB",
+    "Leaflet",
+    "GeoServer",
+    "QGIS",
+    "LangGraph",
+    "Celery",
+    "Redis",
+    "Docker",
+    "AWS",
+    "GCP",
+    "Tailwind CSS",
 ];
 
 
@@ -45,7 +47,7 @@ export const projects = {
         {
             title: "GeoLens",
             description:
-                "WebGIS platform to discover and share interesting places and landmarks in your region.",
+                "WebGIS platform for discovering and sharing location-based landmarks with interactive mapping and spatial search.",
             tags: [
                 "React", "Leaflet", "Material UI", "Express.js", "MongoDB"
             ],
@@ -54,7 +56,7 @@ export const projects = {
         {
             title: "Sailwatch",
             description:
-                "Interactive 3D web app to visualize global ship movements, featuring real-time spatial analysis and smooth ship animations with Cesium and Turf.js.",
+                "3D vessel-tracking interface built with Cesium, Turf.js, and React for visualizing ship movement and spatial behavior.",
             tags: ["React", "TypeScript", "Cesium", "Turf.js", "Tailwind CSS"],
             link: "https://sailwatch.vercel.app",
         },
@@ -62,7 +64,7 @@ export const projects = {
         {
             title: "Sonify",
             description:
-                "Spotify web client integrating Spotify API with visualized listening habits through charts.",
+                "Spotify client that turns listening history into visual insights using the Spotify API and charting tools.",
             tags: [
                 "React", "Tailwind CSS", "Express.js", "Chart.js", "Spotify API"
             ],
@@ -130,20 +132,23 @@ export const projects = {
 export const experience = [
     {
         title: "Software Engineer at TECHG-X",
-        description: `Developed a React-based GIS dashboard for visualizing climate risk data across multiple timeframes.
-Built an Agentic AI platform for geospatial data engineering and visualization using LangGraph.
-Implemented a background job system using Celery and Redis for asynchronous geospatial data processing workflows.
-Developed real-time progress tracking for background tasks using Redis Pub/Sub and SSE.
-Created interactive map components with Leaflet, including custom layer controls and Geoserver integration.`,
+        description: [
+            "First software engineer at TECHG-X; built the MVP and launched the beta of GriidAI, a GeoAI platform for prompt-driven geospatial workflows.",
+            "Built an internal Python SDK for composing modular geospatial tools into multi-stage workflows, supporting LLM-assisted code generation and cloud worker execution.",
+            "Engineered geospatial ingestion pipelines that normalize raster and vector uploads into cloud-optimized formats like COG, GeoParquet, and PMTiles.",
+            "Designed AI-assisted resource allocation for geospatial jobs, dynamically provisioning compute and reducing average job cost by 30%.",
+        ],
         date: "June 2025 – Present",
         location: "Tampa, Florida, USA (Remote)"
     },
     {
         title: "Full Stack Developer at CherriLearn",
-        description: `Developed a gamified quiz platform with leaderboards, rewards, mini games, and performance analytics through interactive charts.
-Implemented push notifications, role-based access control for quizmasters and players, and automated quiz scheduling using cron jobs.
-Built an AI-powered blog generator POC using Next.js and LangChain.
-Reduced server latency by 60% via client and server-side caching, improving website loading times.`,
+        description: [
+            "Developed an agentic AI tutor using retrieval-augmented generation to deliver personalized, syllabus-aligned learning support.",
+            "Designed background job workflows for AI-driven content generation, including activities, explainer videos, and audiobooks from curriculum input.",
+            "Implemented subscription and payment infrastructure with Razorpay, including billing logic, webhook handling, and automated access control.",
+            "Managed production infrastructure across AWS Elastic Beanstalk and DigitalOcean App Platform, with PostgreSQL provisioning and DNS configuration through Cloudflare.",
+        ],
         date: "Jan 2024 – May 2025",
         location: "Mangalore, Karnataka, India"
     }

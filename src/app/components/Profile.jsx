@@ -4,24 +4,18 @@ export default function Profile() {
     return (
         <>
             <img
-                src="/profile.jpg   "
+                src="/profile.jpg"
                 className="w-[70px] h-[70px] rounded-[50%] object-cover object-center"
                 alt={`${about.name}'s profile`}
             />
-            <div className="flex gap-[5px] items-center mt-1">
+            <div className="mt-3">
                 <h1 className="text-2xl font-semibold">{about.name}</h1>
-                <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    height="24px"
-                    viewBox="0 -960 960 960"
-                    width="24px"
-                    fill="currentColor"
-                >
-                    <path d="m344-60-76-128-144-32 14-148-98-112 98-112-14-148 144-32 76-128 136 58 136-58 76 128 144 32-14 148 98 112-98 112 14 148-144 32-76 128-136-58-136 58Zm94-278 226-226-56-58-170 170-86-84-56 56 142 142Z" />
-                </svg>
             </div>
-            <div className="mt-1.5">
+            <div className="mt-2">
                 <p className="text-base text-base-content/60">{about.role}</p>
+                <p className="mt-2 max-w-xl text-base text-base-content/80">
+                    {about.tagline}
+                </p>
             </div>
             <div className="flex items-center mt-3 gap-3">
                 <a href={socials.linkedin} target="_blank" rel="noopener noreferrer">

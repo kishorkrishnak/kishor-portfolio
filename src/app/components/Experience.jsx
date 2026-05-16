@@ -25,9 +25,17 @@ export default function Experience() {
                                         {item.title}
                                     </h3>
 
-                                    <p className="mt-0.5 text-sm text-base-content/80">
-                                        {item.description}
-                                    </p>
+                                    {Array.isArray(item.description) ? (
+                                        <ul className="mt-2 list-disc space-y-1 pl-4 text-sm text-base-content/80">
+                                            {item.description.map((point, pointIndex) => (
+                                                <li key={pointIndex}>{point}</li>
+                                            ))}
+                                        </ul>
+                                    ) : (
+                                        <p className="mt-0.5 whitespace-pre-line text-sm text-base-content/80">
+                                            {item.description}
+                                        </p>
+                                    )}
                                 </div>
                             </li>
                         ))}

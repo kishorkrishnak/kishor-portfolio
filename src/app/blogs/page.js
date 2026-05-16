@@ -7,7 +7,7 @@ export const metadata = {
     keywords: "blog, web development, Next.js, programming, tutorials"
 };
 
-function page() {
+function BlogsPage() {
     return (
         <div className="md:w-[700px] w-[100%] mt-5 p-4">
             <main className="flex flex-col gap-2">
@@ -36,4 +36,4 @@ function page() {
     );
 }
 
-export default page;
+export default BlogsPage;

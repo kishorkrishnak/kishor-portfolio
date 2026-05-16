@@ -1,4 +1,5 @@
 import About from "./components/About";
+import Collaboration from "./components/Collaboration";
 import Experience from "./components/Experience";
 import Profile from "./components/Profile";
 import ProjectsList from "./components/ProjectsList";
@@ -10,9 +11,10 @@ export default function Home() {
             <main className="mt-5 p-4">
                 <Profile />
                 <About />
+                <Experience />
                 <ProjectsList />
                 <TechLists />
-                <Experience />
+                <Collaboration />
             </main>
         </div>
     );
