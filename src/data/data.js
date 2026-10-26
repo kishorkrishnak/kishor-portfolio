@@ -1,37 +1,33 @@
 export const about = {
     name: "Kishor Krishna K",
     role: "Software Engineer",
-    tagline: "Full Stack + AI + GIS",
-    about: "I build software at the intersection of geospatial data, AI, and product engineering. I've shipped across startups, client projects, and early-stage products, taking ideas from concept to usable software. I'm comfortable working across the stack, from backend systems and cloud infrastructure to maps, workflows, and user-facing product experiences. Outside of work, I like experimenting with new tools and contributing to open-source or developer communities.",
+    tagline: "Building geospatial AI products and the systems behind them.",
+    about: "I build software across geospatial data, AI, and product engineering. At TECHG-X, I work on GriidAI, an agentic GeoAI platform that turns natural-language requests into geospatial workflows. My work spans agent runtimes, distributed execution, and geospatial data pipelines.",
     email: "kishorkrishna500@gmail.com",
 };
 
 export const seo = {
     title: `${about.name} | ${about.role}`,
-    description: "Kishor Krishna K",
-    keywords: "portfolio, web developer, Next.js, developer portfolio, minimal portfolio",
+    description: "Kishor Krishna K is a software engineer building geospatial AI products and full-stack systems.",
+    keywords: "Kishor Krishna K, software engineer, geospatial AI, GIS, full-stack engineer",
 }
 
 export const skills = [
-    "React",
-    "Next.js",
-    "TypeScript",
-    "Node.js",
-    "Express.js",
     "Python",
-    "Django",
+    "TypeScript",
+    "React",
     "PostgreSQL",
-    "MongoDB",
-    "Leaflet",
-    "GeoServer",
-    "QGIS",
+    "PostGIS",
     "LangGraph",
     "Celery",
-    "Redis",
-    "Docker",
-    "AWS",
     "GCP",
-    "Tailwind CSS",
+    "GDAL",
+    "GeoPandas",
+    "Rasterio",
+    "Cesium",
+    "MapLibre GL JS",
+    "Leaflet",
+    "Docker",
 ];
 
 
@@ -45,46 +41,46 @@ export const socials = {
 export const projects = {
     pinProjects: [
         {
+            title: "Sailwatch",
+            description:
+                "3D maritime simulation with animated vessel routes, dynamic headings, and real-time proximity and danger-zone detection.",
+            tags: ["React", "TypeScript", "Cesium", "Turf.js", "Tailwind CSS"],
+            link: "https://sailwatch.vercel.app",
+            github: "https://github.com/kishorkrishnak/sailwatch",
+        },
+        {
             title: "GeoLens",
             description:
-                "WebGIS platform for discovering and sharing location-based landmarks with interactive mapping and spatial search.",
+                "Full-stack WebGIS for discovering and sharing points of interest, with routing, reverse geocoding, weather, social features, and GeoJSON export.",
             tags: [
                 "React", "Leaflet", "Material UI", "Express.js", "MongoDB"
             ],
             link: "https://geolens-two.vercel.app/",
+            github: "https://github.com/kishorkrishnak/GeoLens",
         },
-        {
-            title: "Sailwatch",
-            description:
-                "3D vessel-tracking interface built with Cesium, Turf.js, and React for visualizing ship movement and spatial behavior.",
-            tags: ["React", "TypeScript", "Cesium", "Turf.js", "Tailwind CSS"],
-            link: "https://sailwatch.vercel.app",
-        },
+    ],
 
+    otherProjects: [
         {
             title: "Sonify",
             description:
-                "Spotify client that turns listening history into visual insights using the Spotify API and charting tools.",
+                "Built a Spotify client that turns listening history into charts and personal listening insights.",
             tags: [
                 "React", "Tailwind CSS", "Express.js", "Chart.js", "Spotify API"
             ],
             link: "https://sonify-one.vercel.app/",
         },
-
-    ],
-
-    otherProjects: [
         {
             title: "Animebliss",
             description:
-                "Watch your favorite anime shows with a smooth, Netflix-like streaming experience.",
+                "Anime streaming app with show browsing and a Netflix-inspired interface.",
             tags: ["HTML5", "CSS3", "Bootstrap5", "Javascript"],
             link: "https://animehub-inky.vercel.app/",
         },
         {
             title: "Storylink",
             description:
-                "A stories platform where users can read and share stories from around the world.",
+                "A platform for reading and publishing stories.",
             tags: [
                 "HTML5",
                 "CSS3",
@@ -101,28 +97,28 @@ export const projects = {
         {
             title: "Cryptonite",
             description:
-                "Cryptocurrency website showing prices, market data, charts, and a currency converter.",
+                "Crypto market dashboard for prices, charts, and currency conversion.",
             tags: ["HTML5", "CSS3", "Bootstrap5"],
             link: "https://cryptonite-eight.vercel.app/",
         },
         {
             title: "NovaMart",
             description:
-                "Ecommerce website with a neat and minimal user interface for a smooth shopping experience.",
+                "Ecommerce storefront with product browsing and a streamlined shopping interface.",
             tags: ["HTML5", "CSS3", "Javascript", "React", "Tailwind"],
             link: "https://novamart-vert.vercel.app/",
         },
         {
             title: "ApathBandava",
             description:
-                "Donation website built to support financially struggling gaushalas across India.",
+                "Donation platform supporting gaushalas across India.",
             tags: ["HTML5", "CSS3", "Javascript", "React", "Tailwind"],
             link: "https://apathbandava.vercel.app",
         },
         {
             title: "HireFlow",
             description:
-                "Minimal job portal web app that simplifies job searching and hiring processes.",
+                "Job board for candidates and employers.",
             tags: ["HTML5", "CSS3", "Javascript", "React", "Tailwind"],
             link: "https://hireflow.vercel.app/",
         },
@@ -133,23 +129,27 @@ export const experience = [
     {
         title: "Software Engineer at TECHG-X",
         description: [
-            "First software engineer at TECHG-X; built the MVP and launched the beta of GriidAI, a GeoAI platform for prompt-driven geospatial workflows.",
-            "Built an internal Python SDK for composing modular geospatial tools into multi-stage workflows, supporting LLM-assisted code generation and cloud worker execution.",
-            "Engineered geospatial ingestion pipelines that normalize raster and vector uploads into cloud-optimized formats like COG, GeoParquet, and PMTiles.",
-            "Designed AI-assisted resource allocation for geospatial jobs, dynamically provisioning compute and reducing average job cost by 30%.",
+            "Developed GriidAI, an agentic GeoAI platform that turns natural-language requests into executable geospatial workflows for data discovery, analysis, and visualization.",
+            "Built a LangGraph-based agent runtime that coordinates geospatial tools and generates multi-step Python workflows for spatial analysis.",
+            "Implemented distributed execution for long-running geospatial workloads using Celery and GCP, allocating resources by workload size and reducing out-of-memory failures.",
+            "Built STAC-based agent tools for Planetary Computer and other open geospatial data sources, enabling automated dataset discovery and analysis.",
+            "Designed a geospatial ingestion and serving pipeline for raster and vector data, normalizing assets into GeoParquet, COG, and PMTiles and serving raster imagery through TiTiler.",
         ],
-        date: "June 2025 – Present",
-        location: "Tampa, Florida, USA (Remote)"
+        date: "April 2025 – Present",
+        location: "Remote"
     },
     {
-        title: "Full Stack Developer at CherriLearn",
-        description: [
-            "Developed an agentic AI tutor using retrieval-augmented generation to deliver personalized, syllabus-aligned learning support.",
-            "Designed background job workflows for AI-driven content generation, including activities, explainer videos, and audiobooks from curriculum input.",
-            "Implemented subscription and payment infrastructure with Razorpay, including billing logic, webhook handling, and automated access control.",
-            "Managed production infrastructure across AWS Elastic Beanstalk and DigitalOcean App Platform, with PostgreSQL provisioning and DNS configuration through Cloudflare.",
+        title: "Sarvajna Edutech Pvt. Ltd.",
+        positions: [
+            { title: "Full Stack Developer", date: "Aug 2024 – Mar 2025" },
+            { title: "Full Stack Developer Intern", date: "Jan 2024 – Jul 2024" },
         ],
-        date: "Jan 2024 – May 2025",
+        description: [
+            "Developed an agentic AI tutor using retrieval-augmented generation (RAG) for personalized, syllabus-aligned tutoring and explanations.",
+            "Designed background workflows for AI-generated activities, explainer videos, and audiobooks from curriculum content.",
+            "Implemented Razorpay subscriptions and payments, including billing logic, webhook handling, and subscription-based access management.",
+            "Managed production deployments across AWS and DigitalOcean, including application hosting, databases, and environment configuration.",
+        ],
         location: "Mangalore, Karnataka, India"
     }
 ];

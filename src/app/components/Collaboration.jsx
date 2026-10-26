@@ -4,10 +4,10 @@ export default function Collaboration() {
     return (
         <section className="mt-10 scroll-mt-14" id="contact">
             <h2 className="text-xl font-medium before:content-['>'] before:mr-1">
-                Freelance & Collaboration
+                Contact
             </h2>
             <p className="mt-4 text-base text-base-content/80">
-                Open to thoughtful engineering work, collaborations, and conversations around geospatial products, AI tooling, and full-stack systems.
+                Open to engineering work, collaborations, and conversations around geospatial products, AI, and full-stack systems.
             </p>
             <div className="mt-4 flex flex-wrap gap-3">
                 <a

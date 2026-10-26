@@ -17,13 +17,25 @@ export default function Experience() {
                                 <span className="size-3 shrink-0 rounded-full bg-base-content"></span>
 
                                 <div className="-mt-2">
-                                    <time className="text-xs font-medium text-base-content/80">
-                                        {item.date}
-                                    </time>
+                                    {item.date && (
+                                        <time className="text-xs font-medium text-base-content/80">
+                                            {item.date}
+                                        </time>
+                                    )}
 
                                     <h3 className="text-lg font-semibold text-base-content">
                                         {item.title}
                                     </h3>
+
+                                    {item.positions && (
+                                        <div className="mt-1 flex flex-col gap-0.5">
+                                            {item.positions.map((position) => (
+                                                <p key={position.title} className="text-sm text-base-content/75">
+                                                    {position.title} <span className="text-xs text-base-content/60">· {position.date}</span>
+                                                </p>
+                                            ))}
+                                        </div>
+                                    )}
 
                                     {Array.isArray(item.description) ? (
                                         <ul className="mt-2 list-disc space-y-1 pl-4 text-sm text-base-content/80">

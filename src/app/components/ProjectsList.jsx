@@ -1,6 +1,6 @@
-"use client";
 import { projects } from "@/data/data";
 import Link from "next/link";
+import ProjectCard from "./ProjectCard";
 
 export default function ProjectsList() {
     return (
@@ -14,48 +14,8 @@ export default function ProjectsList() {
                 </Link>
             </div>
             <div className="flex flex-col gap-2">
-                {projects.pinProjects.map((item, index) => (
-                    <a
-                        href={item.link}
-                        key={index}
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        className="group cursor-pointer rounded-md border border-base-content/15 p-4 transition-colors hover:border-base-content/45 hover:bg-base-content/[0.03]"
-                    >
-                        <div className="flex flex-col gap-2 justify-between">
-                            <div className="flex items-center justify-between">
-                                <h3 className="font-semibold text-lg">
-                                    {item.title}
-                                </h3>
-                                <svg
-                                    focusable="false"
-                                    preserveAspectRatio="xMidYMid meet"
-                                    fill="currentColor"
-                                    width="16"
-                                    height="16"
-                                    viewBox="0 0 32 32"
-                                    aria-hidden="true"
-                                    className="transform transition-transform duration-300 group-hover:rotate-45 group-active:rotate-45"
-                                    xmlns="http://www.w3.org/2000/svg"
-                                >
-                                    <path d="M10 6L10 8 22.59 8 6 24.59 7.41 26 24 9.41 24 22 26 22 26 6 10 6z"></path>
-                                </svg>
-                            </div>
-                            <p className="text-base-content/80 text-sm sm:text-base">
-                                {item.description}
-                            </p>
-                            <div className="flex items-center flex-wrap gap-2 mt-1">
-                                {item.tags.map((tag, idx) => (
-                                    <span
-                                        key={idx}
-                                        className="rounded border border-base-content/15 px-2 py-0.5 text-xs font-medium text-base-content/65"
-                                    >
-                                        {tag}
-                                    </span>
-                                ))}
-                            </div>
-                        </div>
-                    </a>
+                {projects.pinProjects.map((item) => (
+                    <ProjectCard key={item.title} item={item} headingLevel={3} />
                 ))}
             </div>
         </div>
